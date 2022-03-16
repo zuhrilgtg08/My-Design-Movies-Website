@@ -1,0 +1,287 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.css">
+    <title>My Movie Website Design</title>
+    <!-- swiper js -->
+    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css">
+
+    <!-- box icons -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/boxicons@latest/css/boxicons.min.css">
+</head>
+
+<body>
+    <!-- Navbar -->
+    <header>
+        <a href="#" class="logo"><i class='bx bxs-movie'></i> Movies</a>
+        <div class="bx bx-menu" id="menu-icon"></div>
+
+        <!-- Menu Navbar -->
+        <ul class="navbar">
+            <li><a href="#home" class="home-active">Home</a></li>
+            <li><a href="#movies">Movies</a></li>
+            <li><a href="#coming">Coming Soon</a></li>
+            <li><a href="#subscribe">Subscribe</a></li>
+        </ul>
+        <a href="#" class="btn">Sign In</a>
+    </header>
+
+    <!-- Home Section -->
+    <section class="home swiper" id="home">
+        <div class="swiper-wrapper">
+            <div class="swiper-slide container">
+                <img src="img/home1.jpg" alt="home 1">
+                <div class="home-text">
+                    <span>Marvel Universe</span>
+                    <h1>Venom : Let There <br> Be Carnage</h1>
+                    <a href="#" class="btn"><i class='bx bx-plus'></i> Add Now</a>
+                    <a href="#" class="play">
+                        <i class='bx bx-play'></i>
+                    </a>
+                </div>
+            </div>
+
+            <div class="swiper-slide container">
+                <img src="img/home2.jpg" alt="home 2">
+                <div class="home-text">
+                    <span>Marvel Universe</span>
+                    <h1>Avengers : <br> Infinity War</h1>
+                    <a href="#" class="btn"><i class='bx bx-plus'></i> Add Now</a>
+                    <a href="#" class="play">
+                        <i class='bx bx-play'></i>
+                    </a>
+                </div>
+            </div>
+
+            <div class="swiper-slide container">
+                <img src="img/home3.jpg" alt="home 3">
+                <div class="home-text">
+                    <span>Marvel Universe</span>
+                    <h1>Spiderman : <br> Far from Home</h1>
+                    <a href="#" class="btn"><i class='bx bx-plus'></i> Add Now</a>
+                    <a href="#" class="play">
+                        <i class='bx bx-play'></i>
+                    </a>
+                </div>
+            </div>
+        </div>
+
+        <div class="swiper-pagination"></div>
+    </section>
+
+    <!-- Movies Section -->
+    <section class="movies" id="movies">
+        <h2 class="heading">Opening This Week</h2>
+        <!-- Movies List -->
+        <div class="movies-container">
+            <div class="box">
+                <div class="kotak-img">
+                    <img src="img/m1.jpg" alt="movies 1">
+                </div>
+                <h3>Venom</h3>
+                <span>120 min | Action</span>
+            </div>
+
+            <div class="box">
+                <div class="kotak-img">
+                    <img src="img/m2.jpg" alt="movies 2">
+                </div>
+                <h3>Dunkerk</h3>
+                <span>130 min | Adventure</span>
+            </div>
+
+            <div class="box">
+                <div class="kotak-img">
+                    <img src="img/m3.jpg" alt="movies 3">
+                </div>
+                <h3>Batman Vs Superman</h3>
+                <span>150 min | Thriller</span>
+            </div>
+
+            <div class="box">
+                <div class="kotak-img">
+                    <img src="img/m4.jpg" alt="movies 4">
+                </div>
+                <h3>John Wick</h3>
+                <span>116 min | Adventure</span>
+            </div>
+
+            <div class="box">
+                <div class="kotak-img">
+                    <img src="img/m5.jpg" alt="movies 5">
+                </div>
+                <h3>Aquaman</h3>
+                <span>120 min | Action</span>
+            </div>
+
+            <div class="box">
+                <div class="kotak-img">
+                    <img src="img/m6.jpg" alt="movies 6">
+                </div>
+                <h3>Black Panther</h3>
+                <span>130 min | Thriller</span>
+            </div>
+
+            <div class="box">
+                <div class="kotak-img">
+                    <img src="img/m7.jpg" alt="movies 7">
+                </div>
+                <h3>Thor</h3>
+                <span>110 min | Adventure</span>
+            </div>
+
+            <div class="box">
+                <div class="kotak-img">
+                    <img src="img/m8.png" alt="movies 8">
+                </div>
+                <h3>Bumblebee</h3>
+                <span>120 min | Thriller</span>
+            </div>
+
+            <div class="box">
+                <div class="kotak-img">
+                    <img src="img/m9.jpg" alt="movies 9">
+                </div>
+                <h3>Mortal Engines</h3>
+                <span>142 min | Action</span>
+            </div>
+
+            <div class="box">
+                <div class="kotak-img">
+                    <img src="img/m10.jpg" alt="movies 10">
+                </div>
+                <h3>UnderWorld Blood Wars</h3>
+                <span>133 min | Action</span>
+            </div>
+        </div>
+    </section>
+
+    <!-- coming soon section -->
+    <section class="coming" id="coming">
+        <h2 class="heading">Coming Soon</h2>
+        <!-- coming-container -->
+        <div class="coming-container swiper">
+            <div class="swiper-wrapper">
+                <div class="swiper-slide box">
+                    <div class="kotak-img">
+                        <img src="img/coming1.jpg" alt="coming 1">
+                    </div>
+                    <h3>Johnny English</h3>
+                    <span>110 min | Action</span>
+                </div>
+
+                <div class="swiper-slide box">
+                    <div class="kotak-img">
+                        <img src="img/coming2.jpg" alt="coming 2">
+                    </div>
+                    <h3>Warcraft</h3>
+                    <span>120 min | Adventure</span>
+                </div>
+
+                <div class="swiper-slide box">
+                    <div class="kotak-img">
+                        <img src="img/coming3.jpg" alt="coming 3">
+                    </div>
+                    <h3>Rampage</h3>
+                    <span>133 min | Action</span>
+                </div>
+
+                <div class="swiper-slide box">
+                    <div class="kotak-img">
+                        <img src="img/coming4.jpg" alt="coming 4">
+                    </div>
+                    <h3>Iron Lady</h3>
+                    <span>110 min | Thriller</span>
+                </div>
+
+                <div class="swiper-slide box">
+                    <div class="kotak-img">
+                        <img src="img/coming5.jpg" alt="coming 5">
+                    </div>
+                    <h3>Justice League</h3>
+                    <span>160 min | Action</span>
+                </div>
+
+                <div class="swiper-slide box">
+                    <div class="kotak-img">
+                        <img src="img/coming6.jpeg" alt="coming 6">
+                    </div>
+                    <h3>Doctor Strange</h3>
+                    <span>120 min | Action</span>
+                </div>
+
+                <div class="swiper-slide box">
+                    <div class="kotak-img">
+                        <img src="img/coming7.jpg" alt="coming 7">
+                    </div>
+                    <h3>Captain Marvel</h3>
+                    <span>100 min | Heroes</span>
+                </div>
+
+                <div class="swiper-slide box">
+                    <div class="kotak-img">
+                        <img src="img/coming8.jpg" alt="coming 8">
+                    </div>
+                    <h3>Black Widow</h3>
+                    <span>145 min | Action</span>
+                </div>
+
+                <div class="swiper-slide box">
+                    <div class="kotak-img">
+                        <img src="img/coming9.jpg" alt="coming 9">
+                    </div>
+                    <h3>Ant-Man</h3>
+                    <span>135 min | Action</span>
+                </div>
+
+                <div class="swiper-slide box">
+                    <div class="kotak-img">
+                        <img src="img/coming10.jpg" alt="coming 10">
+                    </div>
+                    <h3>Guardians Of The Galxy</h3>
+                    <span>145 min | Heroes</span>
+                </div>
+            </div>
+            <div class="swiper-pagination"></div>
+        </div>
+    </section>
+
+    <!-- Subscibe Section -->
+    <section class="subscribe" id="subscribe">
+        <h2>Subscibe To Get <br>Newsletter</h2>
+        <form action="">
+            <input type="email" class="email" placeholder="Enter Your Email" required>
+            <input type="submit" value="Subscribe Now" class="btn">
+        </form>
+    </section>
+
+    <!-- footer section -->
+    <section class="footer">
+        <a href="#" class="logo">
+            <i class='bx bxs-movie'></i> Movies
+        </a>
+
+        <div class="social">
+            <a href="#"><i class="bx bxl-facebook"></i></a>
+            <a href="#"><i class="bx bxl-twitter"></i></a>
+            <a href="#"><i class="bx bxl-instagram"></i></a>
+            <a href="#"><i class="bx bxl-linkedin"></i></a>
+        </div>
+    </section>
+
+    <!-- copyRight -->
+    <div class="copyright">
+        <p>&#169; Ahmad Zuhril Fahrizal | All Right Reserved</p>
+    </div>
+
+    <!-- Swiper Script -->
+    <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+    <!-- My-script -->
+    <script src="js/script.js"></script>
+</body>
+
+</html>
