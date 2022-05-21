@@ -283,7 +283,7 @@ header.shadow .logo {
     font-weight: 600;
 }
 
-.subscribe form {
+.subscribe .search-movie {
     background: var(--bg-color);
     padding: 10px;
     border-radius: 0.5rem;
@@ -291,16 +291,16 @@ header.shadow .logo {
     align-items: center;
 }
 
-.subscribe form input {
+.subscribe .search-movie input {
     border: none;
     outline: none;
 }
 
-.subscribe form .email {
+.subscribe .search-movie .carikan {
     width: 280px;
 }
 
-.subscribe form input::placeholder {
+.subscribe .search-movie input::placeholder {
     color: var(--text-color);
     font-size: 0.8rem;
     font-weight: 400;
@@ -310,6 +310,54 @@ header.shadow .logo {
     text-transform: uppercase;
     font-weight: 500;
     cursor: pointer;
+}
+
+.contact form {
+    max-width: 60rem;
+    margin: 1rem auto;
+    text-align: center;
+}
+
+.contact form .inputBox {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.contact form .inputBox input,
+.contact form textarea {
+    width: 100%;
+    background: #333;
+    border-radius: .5rem;
+    padding: 1rem;
+    margin: .7rem 0;
+    font-size: 1rem;
+    color: #fff;
+    text-transform: none;
+}
+
+.contact form .inputBox input::placeholder,
+.contact form textarea::placeholder {
+    color: #eee;
+    text-transform: capitalize;
+}
+
+.contact form .inputBox input:focus,
+.contact form textarea:focus {
+    background: #444;
+}
+
+.contact form .inputBox input {
+    width: 49%;
+}
+
+.contact form textarea {
+    resize: none;
+}
+
+.contact form .btn {
+    width: 20%;
+    float: left;
 }
 
 .footer {
@@ -433,8 +481,17 @@ header.shadow .logo {
 }
 
 @media (max-width:472px) {
-    .subscribe form .email {
+    .subscribe .search-movie .carikan {
         width: 200px;
+    }
+
+    .contact form .inputBox input {
+        width: 100%;
+    }
+
+    .contact form .btn {
+        width: 50%;
+        float: left;
     }
 
     .footer {

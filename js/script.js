@@ -1,3 +1,78 @@
+function carikanMovies() {
+    $('#list-movies').html('');
+
+    $.ajax({
+        url: 'https://www.omdbapi.com',
+        type: 'get',
+        dataType: 'json',
+        data: {
+            'apikey': '7ed2710b',
+            's': $('#search-input').val(),
+        },
+        success: function (result) {
+            if (result.Response == "True") {
+                let movies = result.Search;
+                $.each(movies, function (index, data) {
+                    $('#list-movies').append(boxMovies(data));
+                });
+
+                console.log(movies);
+
+                $('#search-input').val('');
+            } else {
+                $('#list-movies').html(`
+                        <div class="column">
+                            <h1>Movie ${result.Error}</h1>
+                        </div>
+                    `);
+            }
+        }
+    })
+}
+
+$('#search-button').on('click', function () {
+    carikanMovies();
+});
+
+$('#search-input').on('keyup', function (event) {
+    if (event.keyCode === 13) {
+        carikanMovies();
+    }
+});
+
+
+
+const boxMovies = function (data) {
+    return `<div class="box">
+                <div class="kotak-img">
+                    <img src="${data.Poster}" alt="movies 1">
+                </div>
+                <h3>${data.Title}</h3>
+                <span>${data.Year} | ${data.Type}</span>
+            </div>`;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 let header = document.querySelector('header');
 let menu = document.querySelector('#menu-icon');
 let navbar = document.querySelector('.navbar');

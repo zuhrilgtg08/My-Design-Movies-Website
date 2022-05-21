@@ -25,8 +25,9 @@
             <li><a href="#home" class="home-active">Home</a></li>
             <li><a href="#movies">Movies</a></li>
             <li><a href="#coming">Coming Soon</a></li>
-            <li><a href="#subscribe">Subscribe</a></li>
+            <li><a href="#contact">Contact</a></li>
         </ul>
+
         <a href="#" class="btn">Sign In</a>
     </header>
 
@@ -76,87 +77,19 @@
     <!-- Movies Section -->
     <section class="movies" id="movies">
         <h2 class="heading">Opening This Week</h2>
+
+        <!-- Subscibe Section -->
+        <section class="subscribe" id="subscribe">
+            <h2>Search to Your Favourite Movies</h2>
+            <div class="search-movie" id="search-movie">
+                <input type="text" class="carikan" placeholder="Search Movies.." required id="search-input">
+                <input type="button" class="btn" id="search-button" value="Search">
+            </div>
+        </section>
+
         <!-- Movies List -->
-        <div class="movies-container">
-            <div class="box">
-                <div class="kotak-img">
-                    <img src="img/m1.jpg" alt="movies 1">
-                </div>
-                <h3>Venom</h3>
-                <span>120 min | Action</span>
-            </div>
+        <div class="movies-container" id="list-movies">
 
-            <div class="box">
-                <div class="kotak-img">
-                    <img src="img/m2.jpg" alt="movies 2">
-                </div>
-                <h3>Dunkerk</h3>
-                <span>130 min | Adventure</span>
-            </div>
-
-            <div class="box">
-                <div class="kotak-img">
-                    <img src="img/m3.jpg" alt="movies 3">
-                </div>
-                <h3>Batman Vs Superman</h3>
-                <span>150 min | Thriller</span>
-            </div>
-
-            <div class="box">
-                <div class="kotak-img">
-                    <img src="img/m4.jpg" alt="movies 4">
-                </div>
-                <h3>John Wick</h3>
-                <span>116 min | Adventure</span>
-            </div>
-
-            <div class="box">
-                <div class="kotak-img">
-                    <img src="img/m5.jpg" alt="movies 5">
-                </div>
-                <h3>Aquaman</h3>
-                <span>120 min | Action</span>
-            </div>
-
-            <div class="box">
-                <div class="kotak-img">
-                    <img src="img/m6.jpg" alt="movies 6">
-                </div>
-                <h3>Black Panther</h3>
-                <span>130 min | Thriller</span>
-            </div>
-
-            <div class="box">
-                <div class="kotak-img">
-                    <img src="img/m7.jpg" alt="movies 7">
-                </div>
-                <h3>Thor</h3>
-                <span>110 min | Adventure</span>
-            </div>
-
-            <div class="box">
-                <div class="kotak-img">
-                    <img src="img/m8.png" alt="movies 8">
-                </div>
-                <h3>Bumblebee</h3>
-                <span>120 min | Thriller</span>
-            </div>
-
-            <div class="box">
-                <div class="kotak-img">
-                    <img src="img/m9.jpg" alt="movies 9">
-                </div>
-                <h3>Mortal Engines</h3>
-                <span>142 min | Action</span>
-            </div>
-
-            <div class="box">
-                <div class="kotak-img">
-                    <img src="img/m10.jpg" alt="movies 10">
-                </div>
-                <h3>UnderWorld Blood Wars</h3>
-                <span>133 min | Action</span>
-            </div>
         </div>
     </section>
 
@@ -250,12 +183,18 @@
         </div>
     </section>
 
-    <!-- Subscibe Section -->
-    <section class="subscribe" id="subscribe">
-        <h2>Subscibe To Get <br>Newsletter</h2>
+    <!-- contact-section -->
+    <section class="contact" id="contact">
+        <h2 class="heading">Contact Us</h2>
+
         <form action="">
-            <input type="email" class="email" placeholder="Enter Your Email" required>
-            <input type="submit" value="Subscribe Now" class="btn">
+            <div class="inputBox">
+                <input type="text" placeholder="Your Name" required>
+                <input type="email" placeholder="Your Email" required>
+            </div>
+
+            <textarea name="" id="" cols="30" rows="10" placeholder="message"></textarea>
+            <button type="submit" class="btn">Send Message</button>
         </form>
     </section>
 
@@ -280,8 +219,102 @@
 
     <!-- Swiper Script -->
     <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+
+    <!-- jquery -->
+    <script src="https://code.jquery.com/jquery-3.6.0.js"
+        integrity="sha256-H+K7U5CnXl1h5ywQfKtSj8PCmoN9aaq30gDh27Xc0jk=" crossorigin="anonymous"></script>
     <!-- My-script -->
     <script src="js/script.js"></script>
 </body>
 
 </html>
+
+<!-- history -->
+            <!-- <div class="box">
+                <div class="kotak-img">
+                    <img src="img/m1.jpg" alt="movies 1">
+                </div>
+                <h3>Venom</h3>
+                <span>120 min | Action</span>
+            </div>
+
+            <div class="box">
+                <div class="kotak-img">
+                    <img src="img/m2.jpg" alt="movies 2">
+                </div>
+                <h3>Dunkerk</h3>
+                <span>130 min | Adventure</span>
+            </div>
+
+            <div class="box">
+                <div class="kotak-img">
+                    <img src="img/m3.jpg" alt="movies 3">
+                </div>
+                <h3>Batman Vs Superman</h3>
+                <span>150 min | Thriller</span>
+            </div>
+
+            <div class="box">
+                <div class="kotak-img">
+                    <img src="img/m4.jpg" alt="movies 4">
+                </div>
+                <h3>John Wick</h3>
+                <span>116 min | Adventure</span>
+            </div>
+
+            <div class="box">
+                <div class="kotak-img">
+                    <img src="img/m5.jpg" alt="movies 5">
+                </div>
+                <h3>Aquaman</h3>
+                <span>120 min | Action</span>
+            </div>
+
+            <div class="box">
+                <div class="kotak-img">
+                    <img src="img/m6.jpg" alt="movies 6">
+                </div>
+                <h3>Black Panther</h3>
+                <span>130 min | Thriller</span>
+            </div>
+
+            <div class="box">
+                <div class="kotak-img">
+                    <img src="img/m7.jpg" alt="movies 7">
+                </div>
+                <h3>Thor</h3>
+                <span>110 min | Adventure</span>
+            </div>
+
+            <div class="box">
+                <div class="kotak-img">
+                    <img src="img/m8.png" alt="movies 8">
+                </div>
+                <h3>Bumblebee</h3>
+                <span>120 min | Thriller</span>
+            </div>
+
+            <div class="box">
+                <div class="kotak-img">
+                    <img src="img/m9.jpg" alt="movies 9">
+                </div>
+                <h3>Mortal Engines</h3>
+                <span>142 min | Action</span>
+            </div>
+
+            <div class="box">
+                <div class="kotak-img">
+                    <img src="img/m10.jpg" alt="movies 10">
+                </div>
+                <h3>UnderWorld Blood Wars</h3>
+                <span>133 min | Action</span>
+            </div> -->
+
+                <!-- Subscibe Section
+    <section class="subscribe" id="subscribe">
+        <h2>Subscibe To Get <br>Newsletter</h2>
+        <form action="">
+            <input type="email" class="email" placeholder="Enter Your Email" required>
+            <input type="submit" value="Subscribe Now" class="btn">
+        </form>
+    </section> -->
